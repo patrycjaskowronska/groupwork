@@ -23,3 +23,8 @@ print(objetosc_kuli(3))
 assert objetosc_kuli(5) == round((500/3) * math.pi,3)
 assert objetosc_kuli(6) == round(288 * math.pi,3)
 
+
+
+# testy sprawdzające działanie funkcji dla sześcianu
+assert szescian(6) == (216, 216)
+assert szescian(4) == (96, 64)
