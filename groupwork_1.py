@@ -17,3 +17,7 @@ def objetosc_kuli(r):
     return v
 
 print(objetosc_kuli(3))
+
+# testy sprawdzające działanie funkcji dla sześcianu
+assert szescian(6) == (216, 216)
+assert szescian(4) == (96, 64)
