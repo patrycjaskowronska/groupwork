@@ -11,17 +11,22 @@ def szescian(a):
 
 print(szescian(5))
 
-#funkcja licząca objętość kuli,
-def objetosc_kuli(r):
-    v = 4/3 * math.pi * pow(r,3)
-    return round(v,3)
+#funkcja licząca objętość stożka,
+def objetosc_stozka(r,h):
+    v = 1/3 * math.pi * pow(r,2) * h
 
-print(objetosc_kuli(3))
+    return v
+#jest to ostrosłup z czworokątem w podstawie
+def objetosc_ostroslupa(a,b,h):
+    v = 1/3 * a * b * h
 
-#testy sprawdzające objętość kul
+    return v
 
-assert objetosc_kuli(5) == round((500/3) * math.pi,3)
-assert objetosc_kuli(6) == round(288 * math.pi,3)
+#testy sprawdzające objętość stozka i ostroslupa
+
+assert objetosc_stozka(4,3) == 16 * math.pi
+assert objetosc_ostroslupa(2,2,6) == 8
+
 
 
 
