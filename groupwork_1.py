@@ -14,6 +14,12 @@ print(szescian(5))
 #funkcja licząca objętość kuli,
 def objetosc_kuli(r):
     v = 4/3 * math.pi * pow(r,3)
-    return v
+    return round(v,3)
 
 print(objetosc_kuli(3))
+
+#testy sprawdzające objętość kuli
+
+assert objetosc_kuli(5) == round((500/3) * math.pi,3)
+assert objetosc_kuli(6) == round(288 * math.pi,3)
+
